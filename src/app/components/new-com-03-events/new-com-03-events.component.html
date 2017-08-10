@@ -1,0 +1,17 @@
+<p>
+  new-com-03-events works!
+</p>
+<button type="text" (click)="onClick()">OK</button>   
+
+<ul>
+  <li *ngFor="let string_ of string_01; let i = index ">
+    {{i}}-{{string_}} <button (click)="deleteBtn(string_)" >X</button>
+  </li>
+</ul>
+
+<form (submit)="addHobby(number.value)">
+  <div>
+    <label for="number">number</label>
+    <input type="text" #number>
+  </div>
+</form>

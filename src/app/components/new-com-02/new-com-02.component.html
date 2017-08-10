@@ -1,0 +1,25 @@
+<p>
+  new-com-02 works!
+</p>
+
+
+{{address_01.street}}
+{{address_01.city}}
+{{address_01.state}}
+
+{{address_02.street}}
+{{address_02.city}}
+{{address_02.state}}
+
+
+<ul>
+  <li *ngFor="let string_ of string_02">
+    {{string_}}
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let string_ of string_02; let i = index ">
+    {{i}}-{{string_}}
+  </li>
+</ul>
